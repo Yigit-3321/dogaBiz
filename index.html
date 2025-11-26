@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğa Bilinçlendirme</title>
+    <style>
+        /* Temel reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7f6;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #2b7a0b;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f9d342;
+        }
+
+        /* Hero Bölümü */
+        .hero {
+            height: 80vh;
+            background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            max-width: 600px;
+        }
+
+        /* Bilgi Blokları */
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 80px 50px;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            background-color: white;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 15px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+
+        .info-card h3 {
+            color: #2b7a0b;
+            margin-bottom: 15px;
+        }
+
+        .info-card p {
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2b7a0b;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer a {
+            color: #f9d342;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Responsive */
+        @media(max-width: 900px){
+            .info-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">DoğaBiz</div>
+        <div class="menu">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="projeler.html">Projeler</a>
+            <a href="iletisim.html">İletişim</a>
+        </div>
+    </nav>
+
+    <!-- Hero Bölümü -->
+    <section class="hero">
+        <h1>Doğayı Koru, Geleceği Koru</h1>
+        <p>Çevre bilinçlendirmeyi yaymak için küçük adımlar at, büyük fark yarat.</p>
+    </section>
+
+    <!-- Bilgi Blokları -->
+    <section class="info-section">
+        <div class="info-card">
+            <h3>Geri Dönüşüm</h3>
+            <p>Atıklarını doğru şekilde ayırarak doğaya olan etkini azaltabilirsin.</p>
+        </div>
+        <div class="info-card">
+            <h3>Enerji Tasarrufu</h3>
+            <p>Elektrik ve su tüketimini azaltmak, çevreyi korumak için büyük bir adımdır.</p>
+        </div>
+        <div class="info-card">
+            <h3>Doğa Dostu Alışkanlıklar</h3>
+            <p>Günlük yaşantında çevreyi koruyan alışkanlıklar kazanmak herkesin sorumluluğudur.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 DoğaBiz. Tüm hakları saklıdır.</p>
+        <div>
+            <a href="#">Instagram</a>|
+            <a href="#">Twitter</a>|
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
